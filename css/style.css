@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #f7efe6;
+}
+
+html {
+    text-align: center;
+}
+
+.grids-uno {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+    ;
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .grids-uno {
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+
+    .padre-flex {
+        display: none;
+    }
+
+    .imgculo {
+        padding: 0%;
+        position: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul li {
+        padding: 0%;
+    }
+}
+
+.padre-flex {
+    grid-area: header;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    display: inline-block;
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'Unbounded', cursive;
+    padding: 30px;
+    font-size: 5px;
+}
+
+nav {
+    color: rgb(221, 167, 167);
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(223, 222, 176);
+}
+
+.imgculo {
+    position: absolute;
+    left: 3%;
+    text-align: left;
+    padding: 15px;
+}
+
+main {
+    grid-area: main;
+}
+
+.tituloprincipal {
+    position: absolute;
+    left: 3%;
+    padding: 5px;
+}
+
+.enlaces {
+    color: black;
+}
+
+h1 {
+    color: brown;
+    font-family: 'Unbounded', cursive;
+    font-size: 70px;
+    padding: 30px;
+}
+
+h2 {
+    color: rgb(221, 167, 167);
+    font-family: 'Unbounded', cursive;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.actividad1 {
+    color: rgb(255, 189, 135);
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: rgb(221, 167, 167);
+    font-size: 20px;
+}
+
+fieldset {
+    font-family: 'Unbounded', cursive;
+    color: rgb(221, 167, 167);
+    padding: 30px;
+    margin: 100px;
+}
+
+
+footer {
+    grid-area: footer;
+    padding: 20px;
+    border: 30px;
+    margin: 100px;
+    text-align: center;
+}
